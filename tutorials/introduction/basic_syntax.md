@@ -59,4 +59,4 @@ int main(int argc, char **argv) {
 
 
 
-[previous]() | [next]()
+[previous](./setup.md) | [next](./hello_world.md)

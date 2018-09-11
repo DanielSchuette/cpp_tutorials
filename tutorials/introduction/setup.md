@@ -28,3 +28,6 @@ clang++ -std=c++11 -stdlib=libc++ hello_world.cpp -o hello_world
 ```
 
 The programs that contain the compilers are called `g++` and `clang++`. They need additional instructions to correctly compile `C++` source code and these instructions are provided as so-called command-line flags. Flags are just additional arguments and they are usually specified according to the schema `-<argument_name>`. `std=c++11` tells the compiler to use features that were introduced in `C++` standard 11. Clang needs an additional flag to function properly, `-stdlib=libc++`. This argument tells Clang to use the `C++` standard library. In both compiler instructions, the name of the source code file follows next. Lastly, the `-o` flag specifies the name of the output executable (in this example `hello_world`).
+
+
+[previous](./introduction.md) | [next](./basic_syntax.md)

@@ -9,13 +9,15 @@ The source code of the following two programs can be found in `./code/`. They de
 *./code/hello_world_00.cpp*
 
 ```c++
-#include <iostream>
+#include <iostream> // pre-processor instruction
 
-using namespace std;
+using namespace std; // namespaces
 
+
+/* the main loop starts here */
 int main() {
-    cout << "hello world" << endl;
-    return 0;
+    cout << "hello world" << endl; // output a string to the screen
+    return 0; // return statement
 }
 ```
 
@@ -46,6 +48,14 @@ Now, let's take a look at the tokens (or words) that we used in the `hello world
 The first few tokens (that are not comments, i.e. not `// ...` or `/* ... */`) are so-called [pre-processor](https://en.wikipedia.org/wiki/C_preprocessor) instructions. They start with a `#` sign and they are not part of `C++` itself. The pre-processor will be covered in greater detail later, but generally speaking, it provides the ability to include information from other files (library files that describe helpful functions for example) in your program. In the program above, the pre-processor (which is invoked by the compiler in an initial step before actual compilation) is instructed to literally **include** a header file which provides functions for input and output (thus *IO*) of e.g. characters or strings to and from the screen.
 
 If you try to run the program without this instruction, the compiler will not be able to interpret the `cout` token.
+
+
+## Namespaces
+
+Again, namespaces will be discussed in greater detail soon. Suffice to say that `using namespace std;` allows us to omit the source of functions, objects, etc. when we use them in our code. Without this line, we would have to write for example `std::cout` to let the compiler know that `cout` is defined in the standard library (i.e. a different namespace). At this point, just remember to include this somewhat magical line of code to simplify the process of calling upon things that are defined in libraries that we are just using but did not write ourselves.
+
+
+## Main Loop
 
 
 

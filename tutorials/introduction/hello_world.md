@@ -57,6 +57,8 @@ Again, namespaces will be discussed in greater detail soon. Suffice to say that 
 
 ## Main Loop
 
+The `main` function is the starting point for any `C++` program. If the compiler cannot find a `main` function, your code will not compile.
 
+When we look at `main`, we can see two things that are attached to every function in `C++` and any other programming language: `parameters` and `return values`. Parameters
 
 [previous](./basic_syntax.md) | [next]()
